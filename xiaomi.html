@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        ul{
+            width:100%;
+            margin:50px 0;
+        }
+        li{
+            /*width:234px;*/
+            /*height:300px;*/
+            /*list-style: none;*/
+            /*float: left;*/
+            /*text-align: center;*/
+            /*background-color: #FFF;*/
+            /*margin-right: 12px;*/
+            width: 230px;
+            height: 300px;
+            text-align: center;
+            margin-right: 12px;
+            background-color: #FFF;
+            float: left;
+            position: relative;
+            top: 0;
+            overflow: hidden;
+            transition: all .5s;
+            border:1px solid black;
+        }
+        .show{
+            width:100%;
+            height:100px;
+            position: absolute;
+            bottom:-100px;
+    		background-color: #ff6700;
+            transition:all 0.5s;
+        }
+
+
+        li:hover{
+            top:-5px;
+            box-shadow: 0 0 15px #AAA;
+        }
+        li:hover .show{
+            bottom:0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li><img src="./images/1.jpg" alt="">
+        <div class="show"></div>
+    </li>
+    <li><img src="./images/2.jpg" alt="">
+        <div class="show"></div>
+    </li>
+    <li><img src="./images/3.jpg" alt="">
+        <div class="show"></div>
+    </li>
+    <li><img src="./images/4.jpg" alt="">
+        <div class="show"></div>
+    </li>
+    <li><img src="./images/5.jpg" alt="">
+        <div class="show"></div>
+    </li>
+</ul>
+</body>
+</html>
